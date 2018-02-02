@@ -1,0 +1,44 @@
+{
+  "name": "coincap-lib",
+  "version": "1.0.0",
+  "description": "CoinCap.io API access library",
+  "keywords": [
+    "coincap",
+    "api",
+    "socket",
+    "realtime",
+    "bitcoin",
+    "ethereum",
+    "exchange",
+    "rates"
+  ],
+  "license": "MIT",
+  "author": "Gabriel Montes <gabriel@utoctadel.com.ar>",
+  "files": [
+    "config.json",
+    "src/*"
+  ],
+  "main": "src/index.js",
+  "repository": "gabmontes/coincap-lib",
+  "scripts": {
+    "lint": "standard",
+    "test": "npm run lint && mocha"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "socket.io-client": "^2.0.4"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.0",
+    "proxyquire": "^1.8.0",
+    "sinon": "^4.2.2",
+    "standard": "^10.0.3"
+  },
+  "engines": {
+    "node": ">6"
+  },
+  "standard": {
+    "env": [ "mocha" ]
+  }
+}
